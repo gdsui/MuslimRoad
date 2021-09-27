@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/halal_nav"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.muslimroad.ui.halalMain.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_e_Code_Fragment"
+            app:destination="@id/e_Code_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/catalogFragment"
+        android:name="com.example.muslimroad.ui.catalog.CatalogFragment"
+        android:label="fragment_catalog"
+        tools:layout="@layout/fragment_catalog" />
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.muslimroad.ui.menu.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" />
+    <fragment
+        android:id="@+id/e_Code_Fragment"
+        android:name="com.example.muslimroad.ui.e_code.E_Code_Fragment"
+        android:label="fragment_e__code_"
+        tools:layout="@layout/fragment_e__code_" >
+        <action
+            android:id="@+id/action_e_Code_Fragment_to_e_Code_Detail_Fragment"
+            app:destination="@id/e_Code_Detail_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/e_Code_Detail_Fragment"
+        android:name="com.example.muslimroad.ui.e_code_detail.E_Code_Detail_Fragment"
+        android:label="fragment_e__code__detail_"
+        tools:layout="@layout/fragment_e__code__detail_" />
+</navigation>

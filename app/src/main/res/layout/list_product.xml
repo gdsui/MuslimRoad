@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="15dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E105"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/product_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Тамак аш кошулмаларыЕ105 "
+                app:layout_constraintStart_toEndOf="@id/tv_product_name"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/vector_right"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/e_code_haram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/bg_tv_haram"
+                android:padding="7dp"
+                android:text="Харам"
+                android:textColor="@android:color/holo_red_dark"
+                app:layout_constraintStart_toStartOf="@id/tv_product_name"
+                app:layout_constraintTop_toBottomOf="@id/tv_product_name" />
+
+            <TextView
+                android:id="@+id/tv_e_code_kumon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/bg_kumon_tv"
+                android:padding="7dp"
+                android:text="Кумон"
+                android:textColor="@color/red_dark"
+                app:layout_constraintStart_toStartOf="@id/product_title"
+                app:layout_constraintTop_toBottomOf="@id/product_title" />
+
+            <TextView
+                android:id="@+id/product_halal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Халал"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/tv_e_code_kumon"
+                app:layout_constraintTop_toBottomOf="@id/product_title"
+                android:layout_marginTop="22dp"
+                android:padding="7dp"
+                android:background="@drawable/bg_halal_tv"
+                android:layout_marginLeft="7dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
